@@ -1,0 +1,9 @@
+<?php
+session_start();
+
+//¼ì²âÊÇ·ñµÇÂ½£¬ÈôÃ»µÇÂ½×ªÏòµÇÂ½Ò³Ãæ
+if(isset($.SESSION['phone'])){
+    header("Location:login.html");
+    exit();
+}
+?>

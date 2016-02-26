@@ -1,0 +1,57 @@
+<div id="detail" data-role="page" ng-controller="detailCtrl">
+  <div data-role="header">
+    <a href="#" data-rel="back"
+       class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-back ui-btn-icon-notext"></a>
+    <a href="#panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-bars ui-btn-icon-notext"></a>
+    <h1>详情页</h1>
+  </div>
+  <div id="panel" data-role="panel" data-display="push" data-position="right">
+    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow register-btn">
+      注册
+      <input type="button" data-enhanced="true" ng-click='jump("register.html")'>
+    </div>
+    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow login-btn">
+      登陆
+      <input type="button" data-enhanced="true" ng-click='jump("login.html")'>
+    </div>
+    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow logout-btn">
+      注销登陆
+      <input type="button" data-enhanced="true" ng-click="logout()">
+    </div>
+    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow">
+      关闭侧边栏
+      <input type="button" data-enhanced="true" data-rel="close">
+    </div>
+  </div>
+  <div class="ui-content">
+    <p><a href="main.html">首页</a>/详情页</p>
+
+    <h2 class="ui-bar ui-bar-a ui-corner-all">{{dish.name}}</h2>
+
+    <div class="ui-body ui-body-a ui-corner-all">
+      <img ng-src="img/{{dish.img_lg}}" alt=""/>
+
+      <p><strong>主要原料：</strong>{{dish.material}}</p>
+
+      <p>{{dish.detail}}</p>
+
+      <p>￥{{dish.price}}</p>
+    </div>
+  </div>
+  <div class="ui-content">
+    <h2 class="ui-bar ui-bar-a ui-corner-all">
+      <input type="button" class="btn btn-danger" data-role="none" value="我再看看" ng-click="jump('main.html')"/>
+      <input type="button" class="btn btn-success" data-role="none" value="我要订餐" ng-click="order()"/>
+    </h2>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="main.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-home"></a></li>
+        <li><a href="javascript: " class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-grid"></a></li>
+        <li><a href="myorder.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-user"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>

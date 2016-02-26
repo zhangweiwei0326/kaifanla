@@ -1,0 +1,118 @@
+a{
+    text-decoration: none;
+}
+a.btn{
+    color: #ffffff;
+}
+.error{
+    color:red;
+}
+.btn-success{
+    color: #ffffff;
+    background-color: #5cb85c !important;
+    border-color: #5cb85c !important;
+}
+.btn {
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 18px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn-danger{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn-success{
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+/*开始页面*/
+#index{
+
+}
+#index .ui-content{
+
+
+}
+
+.start-title{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    max-width: 800px;
+    height:300px;
+    text-align: center;
+}
+.start-title h1{
+    font-size:50px;
+}
+.start-title img{
+    width:100%;
+
+}
+
+/*详情页面*/
+#detail img{
+    max-width:500px;
+    width:100%;
+}
+
+#detail input[type='button']:first-child{
+
+    float:right;
+    margin-left:20px;
+}
+#detail input[type='button']:last-child{
+
+    float:right;
+}
+
+
+/*登陆页面*/
+#login .ui-content{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    max-width: 800px;
+    height:300px;
+    text-align: center;
+}
+#login input[type='button']:first-child{
+    float:right;
+    margin-left:20px;
+}
+#login input[type='button']:last-child{
+    float:right;
+}
+#login p{
+    height:20px;
+}
+#pp-error{
+    position:absolute;
+    bottom:20px;
+}
+
+
+/*底部*/
+

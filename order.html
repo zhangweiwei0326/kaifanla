@@ -1,0 +1,54 @@
+<div id="order" data-role="page" ng-controller="orderCtrl">
+  <div data-role="header" >
+    <a href="#" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-back ui-btn-icon-notext" ></a>
+    <a href="#panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-bars ui-btn-icon-notext" ></a>
+    <h1>订单</h1>
+  </div>
+  <div id="panel" data-role="panel" data-display="push" data-position="right">
+    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow register-btn">
+      注册
+      <input type="button" data-enhanced="true" ng-click='jump("register.html")'>
+    </div>
+    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow login-btn">
+      登陆
+      <input type="button" data-enhanced="true" ng-click='jump("login.html")'>
+    </div>
+    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow logout-btn">
+      注销登陆
+      <input type="button" data-enhanced="true" ng-click="logout()">
+    </div>
+    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow">
+      关闭侧边栏
+      <input type="button" data-enhanced="true" data-rel="close">
+    </div>
+  </div>
+  <div class="ui-content">
+    <div class="ui-body ui-body-a ui-corner-all">
+      <form action="">
+        <label for="linkman">联系人</label>
+        <input type="text"  id="linkman" placeholder="联系人" ng-model="order.user_name">
+          <fieldset data-role="controlgroup" data-type="horizontal" >
+          <legend>性别</legend>
+          <input type="radio" name="sex" id="male" value="1" checked="checked" ng-model="order.sex">
+          <label for="male">男</label>
+          <input type="radio" name="sex" id="female" value="2" ng-model="order.sex">
+          <label for="female">女</label>
+          </fieldset>
+        <label for="phone">联系电话</label>
+        <input type="text"  id="phone"  value="{{phone}}" disabled="disabled">
+        <label for="address">送餐地址</label>
+        <textarea name="address" id="address" cols="30" rows="5" ng-model="order.addr"></textarea>
+        <a class="ui-input-btn ui-btn ui-corner-all ui-shadow" ng-click="submitOrder()">提交</a>
+      </form>
+    </div>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="main.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-home"></a></li>
+        <li><a href="javascript: " class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-grid"></a></li>
+        <li><a href="myorder.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-user"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
